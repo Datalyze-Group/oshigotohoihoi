@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      lang="ja">
+<html lang="jp"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-	<meta content="text/css" http-equiv="Content-Style-Type" />
-	<meta content="text/javascript" http-equiv="Content-Script-Type" />
-	<title th:text="${title}">お仕事ホイホイ</title>
-	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- デフォルトで使用するmeta要素やlink要素を記述 -->
+	<title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">Sample</title>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="container" th:fragment="contents">
+	<div id="">
+		<div layout:fragment="content">
+		  <!-- ここにcontentコンテンツが置換される -->
+		  正しく個別ページの内容が適応されていません。
+		  layout:fragment="content"の記述があるか、確認してください。
 		</div>
 	</div>
 </body>

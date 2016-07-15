@@ -11,7 +11,7 @@ public class MatchingController {
 
 	@RequestMapping("/matching")
 	public String matching(Model model) {
-		model.addAttribute("title", "人材・案件自動マッチング");
+		model.addAttribute("title", "");
 		return "matching/index";
 	}
 

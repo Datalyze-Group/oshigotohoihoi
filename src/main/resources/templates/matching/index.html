@@ -1,1 +1,16 @@
-<div th:include="layout::contents"></div>
+<!DOCTYPE html>
+<html lang="jp" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<title>人材・案件自動マッチング | お仕事ホイホイ</title>
+</head>
+<body>
+	<!-- 以下のdiv要素がcontentと置換される -->
+	<div layout:fragment="content">
+		<section>
+			<h1>人材・案件自動マッチング</h1>
+		</section>
+	</div>
+</body>
+</html>
